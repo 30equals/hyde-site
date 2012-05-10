@@ -1,1 +1,1 @@
-My personal site made with Hyde - a python base static HTML site generator
+My personal site made with Hyde - a python based static HTML site generator
