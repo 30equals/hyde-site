@@ -1,12 +1,11 @@
-{# Use base.j2 template as a base and only provide values for placeholders
-   in this file.
-#}
-{% extends "base.j2" %}
+---
+extends: base.j2
+default_block: main
+title: BASIC - A hyde website
+description: Home page for the BASIC hyde template
+---
 
-{# Markdown main content block. #}
-{% block content %}
-Index page header 
-=================
-index content
+<section class="frontpage">
+Test index ramble
 
-{% endblock %}
+</section>
