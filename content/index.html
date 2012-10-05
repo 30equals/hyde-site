@@ -1,11 +1,23 @@
 ---
 extends: base.j2
-default_block: main
 title: Jim Faes - Developer from Belgium
 description: Home page of Jim Faes - Developer from Belgium
 ---
 
-<section class="frontpage">
-Test index ramble
+{% from "macros.j2" import render_excerpt with context  %}
+{% block main %}
 
-</section>
+<h2>Intro</h2>
+<p>
+  Intro blablabla
+</p>
+<h2>Recent blog posts</h2>
+
+<ul class="listing clear">
+  {% for res in resource.node.walk_resources_sorted_by_time() %}
+  <li>
+    {{ render_excerpt(res) }}
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

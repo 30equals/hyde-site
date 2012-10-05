@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="/media/css/site.css">
   <script src="/media/js/libs/modernizr-1.7.min.js"></script>
 </head>
-<body id="happy">
+<body id=".hyde_deps">
 <div id="container">
 
   <div id="main" role="main">
@@ -21,7 +21,7 @@
             </a>
         </li>        <li>
             <a title="Blog"
-                class="button white blog"
+                class="button white active blog"
                 href="/blog">
                 Blog
             </a>
@@ -35,12 +35,33 @@
 </nav>
           </header>
     <section class="content">
-      <section class="archives">
-<h1 class="tag title"></h1>
-<ul class="posts clear">
-</ul>
-</section>
-    </section>
+      <article class="post">
+
+<h1 class="title"></h1>
+<time datetime="2012-01-01">
+    Posted: Sun, 01 Jan 2012
+</time>
+
+<p>{}</p>
+
+
+</article>
+<nav class="post_nav clear">
+
+  <a class="prev disabled"
+     title=""
+    >
+    Previous
+  </a>
+  <a class="backlink" href="/blog">Back to list</a>
+
+  <a class="next disabled"
+     title=""
+    >
+    Next
+  </a>
+
+</nav>    </section>
   </div>
 </div>
 </body>
